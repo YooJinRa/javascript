@@ -58,4 +58,3 @@ console.log(1 >= 2)
 // : ||는 연산 대상 중 하나만 true 여도 true flxjs
 // : &&는 연산 대상이 모두 true 여야만 true 리턴
 // : ! ture를 false로, false를 true로 바꿔서 리턴
-// : ddd
