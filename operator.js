@@ -51,7 +51,7 @@ console.log(totalPrice) // 800000 : totalPrice = totalPrice - shirtsPrice
 console.log(1 < 2)
 console.log(1 <= 2)
 console.log(1 > 2)
-console.log(1 >= 2)
+console.log(1 >= 2);
 
 // 논리연산자 Logical operators
 // : ||, &&, ! 과 같은 연산자
