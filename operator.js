@@ -52,6 +52,7 @@ console.log(1 < 2)
 console.log(1 <= 2)
 console.log(1 > 2)
 console.log(1 >= 2);
+console.log("test");
 
 // 논리연산자 Logical operators
 // : ||, &&, ! 과 같은 연산자
