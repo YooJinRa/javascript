@@ -56,6 +56,34 @@ console.log("test");
 
 // 논리연산자 Logical operators
 // : ||, &&, ! 과 같은 연산자
-// : ||는 연산 대상 중 하나만 true 여도 true flxjs
+// : ||는 연산 대상 중 하나만 true 여도 true 리턴
 // : &&는 연산 대상이 모두 true 여야만 true 리턴
 // : ! ture를 false로, false를 true로 바꿔서 리턴
+
+let isOnSale = true
+let isDiscountItem = true
+
+console.log(isOnSale && isDiscountItem) //true
+console.log(isOnSale || isDiscountItem) //true
+
+isOnSale = false
+console.log(isOnSale && isDiscountItem) //false
+console.log(isOnSale || isDiscountItem) //true
+
+console.log(!isOnSale) //true
+
+// 일치연산자 Equality operators
+console.log(1 === 1)
+console.log(1 === 2)
+console.log('javascript' === 'javascript')
+console.log('javascript' === 'Javascript')
+// == vs ===
+// : ===는 strict 일치연산자 이기 때문에 두 값의 데이터타입과 값 자체가 정확하게 일치해야만 true를 리턴
+// : ==는 두 값의 데이터 타입이 일치하지 않을 때 해당 값의 데이터 타입을 자동으로 변환해주는 자바스크립트 특성이 있다. 이에 따라 실수 유발가능성이 크다.
+
+//quiz
+let phone = 200000
+let ipad = 30000
+let totalPhone = phone + ipad
+
+console.log(`총 ${totalPhone - totalPhone * 0.2}원에 물건을 구입합니다.`)
