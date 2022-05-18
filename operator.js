@@ -87,5 +87,5 @@ let ipad = 30000
 let totalPhone = phone + ipad
 
 console.log(`총 ${totalPhone - totalPhone * 0.2}원에 물건을 구입합니다.`)
-// git 업로드가 잘 안되넹 ㅠㅠ으ㅁ
+// git 업로드가 잘 안되넹 ㅠㅠ으ㅁddd
 
