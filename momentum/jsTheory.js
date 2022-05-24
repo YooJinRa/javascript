@@ -75,3 +75,19 @@ const talent = {
 }
 console.log(talent.name)
 talent.saySomething("iyoo")
+
+//Conditionals
+const age = parseInt(prompt("How old are you?"))
+
+if(isNaN(age) || age < 0){ // not a number
+    console.log("Please write a real positive number")
+} else {
+    if(age < 19) {
+        console.log("Do not drink")
+    } else if (age >= 19 && age < 50) {
+        console.log("You can drink")
+    } else {
+        console.log("may be...")
+    }
+    
+}
