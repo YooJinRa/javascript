@@ -12,14 +12,17 @@ function saveToDos() {
 
 function deleteToDo(event) {
     // target : event가 실행된 html element를 말함
-    const li = event.target.parentElement // want to delete
+    const li = event.target.parentElement // want to delete :typeof string
     li.remove()
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id)) //filter 함수 , parseInt() 사용 string -> number type 변환
+    saveToDos() //storage에 삭제한 데이터 반영
 }
 
 function paintToDo(newTodo) {
     const li = document.createElement("li")
+    li.id = newTodo.id
     const span = document.createElement("span")
-    span.innerText = newTodo
+    span.innerText = newTodo.text
 
     const button = document.createElement("button")
     button.innerText = "❌"
@@ -46,10 +49,10 @@ function handleToDoSubmit(event) {
 
 toDoForm.addEventListener("submit", handleToDoSubmit)
 
-const savedToDos = localStorage.getItem(TODOS_KEY)
+const savedToDos = localStorage.getItem(TODOS_KEY) // storage에 저장된 값 불러오기
 
-if(saveToDos !== null) {
+if(savedToDos !== null) { //storage에 저장된 값이 비있다면,
     const parsedToDos = JSON.parse(savedToDos)
     toDos = parsedToDos
-    parsedToDos.forEach(paintToDo) // error... 
+    parsedToDos.forEach(paintToDo)
 }
