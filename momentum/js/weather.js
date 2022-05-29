@@ -9,8 +9,8 @@ function onGeoOk(position) {
         const weather = document.querySelector("#weather span:first-child")
         const city = document.querySelector("#weather span:last-child")
         
-        weather.innerText = `현재위치 : ${data.weather[0].main} / 현재온도 : ${data.main.temp}도`
-        city.innerText = data.name
+        weather.innerText = `Weather : ${data.weather[0].main} | Temperature : ${data.main.temp}℃`
+        city.innerText = `Location : ${data.name}`
     })    
 }
 function onGeoError() {

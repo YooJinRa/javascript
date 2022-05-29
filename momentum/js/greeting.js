@@ -21,7 +21,7 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings(username) {
-    greeting.innerText = `Hello ${username}`
+    greeting.innerText = `Nice to meet you! ${username}`
     greeting.classList.remove(HIDDEN_CLASSNAME)
 }
 // localStorage에 값 여부에 따라서 입력칸 또는 결과값 보여주기(새로고침시에도)

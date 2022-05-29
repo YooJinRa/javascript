@@ -1,3 +1,180 @@
-.hidden {
-    display:none;
+/* reset */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:#fff;
+    font-family: 'Gowun Batang', serif;
+    text-align:center;
 }
+ul li, ol li {
+    list-style: none;
+}
+.hidden {
+    display:none !important;
+}
+h3 {
+    width: 340px; height: 60px;
+    padding-top: 30px;
+    margin: 30px auto 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 30px;
+    border-top: 1px solid #fff;
+}
+
+/* background */
+#bg-wrap {
+    position:fixed;
+    width:100%; height:100%;
+    left:0; top:0;
+    z-index:-1;
+    overflow: hidden;
+    background-color:#000;
+
+}
+#bg-image {
+    width:100%; height:100%;
+    object-fit: cover;
+    zoom: 1; /* ie 5,6,7 bug fix */
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+/* layout */
+#wrap {
+    position: absolute;
+    width: 90%; height: 90%;
+    left: 50%; top: 5%;
+    margin-left: -45%;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+
+/* weather */
+#weather {
+    width:100%; height: 60px;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+/* clock */
+#clock {
+    width:100%; height:100px; 
+    margin-bottom: 30px;
+    font-size: 90px;
+    line-height:100px;
+}
+
+/* login_greeting */
+#greeting {
+    width:100%;
+    line-height: 70px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#login-form {
+    position:relative;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+
+    width:100%; height: 30px;
+    max-width: 300px;
+    margin:0 auto;
+    border-bottom: 1px solid #fff;
+}
+#login-form input[type="text"] {
+    display: inline-block;
+    width: 70%; height: 100%;
+    font-size: 15px;
+    line-height:30px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#login-form input[type="submit"] {
+    width: 30%; height: 100%;
+    border: 0;
+    background-color:#fff;
+    color:#000;
+}
+
+/* form 공통 */
+input::placeholder {
+    color:#fff;
+    font-style: italic;
+}
+input::-webkit-input-placeholder {
+    color:#fff;
+    font-style: italic;
+}
+input:-ms-input-placeholder {
+    color:#fff;
+    font-style: italic;
+}
+
+/* todo list */
+#todo-form {
+    position:relative;
+    width:100%; height: 30px;
+    max-width: 300px;
+    margin:0 auto;
+    border-bottom: 1px solid #fff;
+}
+#todo-form input {
+    display: inline-block;
+    width: 100%; 
+    height: 100%;
+    font-size: 15px;
+    line-height:30px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#todo-list {
+    width:100%;
+    max-width: 300px;
+    margin:20px auto;
+}
+#todo-list li {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    width:100%;
+    line-height: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+}
+#todo-list li>span {
+    display: inline-block;
+    width: 70%;
+    text-align:left;
+    text-indent: 5px;
+}
+#todo-list li>button {
+    display: inline-block;
+    width: 30%; height: 30px;
+    background-color: #fff;
+    border: 0;
+    color: #000;
+
+}
+
+/* quote */
+#box-quote {
+    position:absolute;
+    width:100%;
+    bottom:0;
+    padding-bottom: 30px;
+}
+span#quote {
+    font-size: 15px;
+    font-weight: bolder;
+}
+span#author {
+    font-size: 13px;
+    font-style: italic;
+}
+

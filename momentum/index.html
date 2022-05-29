@@ -6,30 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Momentum</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Song+Myung&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <form id="login-form" class="hidden">
-        <input 
-            required
-            maxlength="15"
-            type="text" 
-            placeholder="What is your name" />
-        <input type="submit" value="Log In" />
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
+    <div id="wrap">
+        <div id="weather">
+            <span></span> <br /> <!-- 날씨 -->
+            <span></span> <!-- 온도, 위치 -->
+        </div>
+
+        <h2 id="clock">00:00:00</h2>
+
+        <form id="login-form" class="hidden">
+            <input 
+                required
+                maxlength="15"
+                type="text" 
+                placeholder="What is your name?" />
+            <input type="submit" value="Log In" />
+        </form>
+        
+        <h1 id="greeting" class="hidden"></h1>
+
+        <h3>TO DO LIST</h3>
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do and Press Enter." required />
+        </form>
+        <ul id="todo-list"></ul>
+
+        
+        <div id="box-quote">
+            <h3>QUOTE</h3>
+            <span id="quote"></span> <br />
+            <span id="author"></span>
+        </div>
+        
+    </div><!-- #wrap end -->
+    
   
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>

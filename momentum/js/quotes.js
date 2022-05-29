@@ -41,8 +41,8 @@ const quotes = [
     },
 ]
 
-const quote = document.querySelector("#quote span:first-child")
-const author = document.querySelector("#quote span:last-child")
+const quote = document.querySelector("#box-quote span#quote")
+const author = document.querySelector("#box-quote span#author")
 
 // floor() : 반내림, ceil() : 반올림, round() : 
 //0 값도 있어야 하니까 floor() 사용
@@ -50,4 +50,4 @@ const author = document.querySelector("#quote span:last-child")
 const todaysQuotes = quotes[Math.floor(Math.random() * quotes.length)]
 
 quote.innerText = todaysQuotes.quote
-author.innerText = todaysQuotes.author
+author.innerText = `- ${todaysQuotes.author} -`
