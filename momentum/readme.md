@@ -10,3 +10,4 @@
 - 현재 시간 기능
 
 ## 강의 후 완료 이미지
+<img src="image_complete.png" width="500px" />
